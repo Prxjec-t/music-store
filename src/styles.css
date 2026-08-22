@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(44, 42, 42, 0.884);
+  padding: 0.5rem;
+  min-height: 10svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(148, 224, 97);
+}
+
+main {
+  background-color: rgb(48, 45, 45);
+  min-height: 80svh;
+}
+
+.music-content {
+  display: flex;
+}
+
+.albums-listing {
+  max-width: 80svw;
+  flex: 1 0;
+  color: wheat;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-left: 1rem;
+  padding-top: 0.7rem;
+  background-color: aqua;
+}
+
+.album-img {
+  width: 250px;
+  height: 250px;
+}
+
+.sort-and-filter {
+  max-width: 20svw;
+  flex: 1 0;
+  display: flex;
+  background-color: aquamarine;
+}
+
+footer {
+  min-height: 10svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(184, 82, 224);
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: rgba(44, 42, 42, 0.884);
+}
