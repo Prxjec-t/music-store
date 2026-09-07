@@ -6,6 +6,8 @@ const albums = [
     artist: 'Radiohead',
     release_year: 2007,
     genre: 'Alternative Rock',
+    price: 35.99,
+    purchase: 'Add to cart',
   },
   {
     id: 2,
@@ -14,6 +16,8 @@ const albums = [
     artist: 'Radiohead',
     release_year: 1997,
     genre: 'Alternative Rock',
+    price: 35.99,
+    purchase: 'Add to cart',
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ const albums = [
     artist: 'Interpol',
     release_year: 2007,
     genre: 'Alternative Rock',
+    price: 35.99,
+    purchase: 'Add to cart',
   },
   {
     id: 4,
@@ -30,6 +36,8 @@ const albums = [
     artist: 'The Beatles',
     release_year: 1969,
     genre: 'Rock',
+    price: 35.99,
+    purchase: 'Add to cart',
   },
   {
     id: 5,
@@ -38,6 +46,8 @@ const albums = [
     artist: 'The Killers',
     release_year: 2004,
     genre: 'Alternative Rock',
+    price: 35.99,
+    purchase: 'Add to cart',
   },
 ];
 

@@ -31,7 +31,13 @@ main {
   grid-template-columns: repeat(5, 1fr);
   padding-left: 1rem;
   padding-top: 0.7rem;
-  background-color: aqua;
+  font-size: 1.15rem;
+  /* background-color: aqua; */
+
+  button {
+    background-color: bisque;
+    display: inline-block;
+  }
 }
 
 .album-img {
@@ -40,10 +46,29 @@ main {
 }
 
 .sort-and-filter {
-  max-width: 20svw;
-  flex: 1 0;
+  max-width: 25svw;
+  max-height: 25svh;
+  flex: 0 1;
   display: flex;
-  background-color: aquamarine;
+  /* background-color: rgba(88, 80, 80, 0.973); */
+
+  button {
+    height: 6svh;
+    width: 6svw;
+
+    margin: 8px;
+
+    color: white;
+    background-color: black;
+    border-radius: 5svw;
+    border: 0;
+
+    font-size: 1.3rem;
+  }
+
+  button:hover {
+    background-color: #00000098;
+  }
 }
 
 footer {
