@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kimi Leminaho" />
     <meta name="description" content="A little fun practice project with a music store" />
-    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Music Store</title>
   </head>
   <body>
@@ -14,8 +14,9 @@
     </header>
 
     <main>
-      <div class="music-content">
+      <div class="music-content" id="musicContent">
         <section class="albums-listing" id="albumsListing"></section>
+        <div id="albumMessage"></div>
         <section class="sort-and-filter">
           <div class="sort-and-filter-box">
             <button>Sort</button>
@@ -26,6 +27,7 @@
     </main>
 
     <footer>&copy; Kimi Leminaho</footer>
-    <script type="module" src="/src/index.ts"></script>
+    <script type="module" src="/js/albumsList.js"></script>
+    <script type="module" src="/js/functions.js"></script>
   </body>
 </html>
