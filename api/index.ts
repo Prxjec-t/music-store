@@ -2,16 +2,27 @@ import dotenv from 'dotenv';
 dotenv.config();
 import express from 'express';
 import cors from 'cors';
+import cookieParser from 'cookie-parser';
+import path from 'path';
 const PORT = process.env.DB_PORT || 5000;
 
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cookieParser());
+
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || 'http://localhost:3000',
+    credentials: true,
+  }),
+);
+
+app.use(express.static(path.join(process.cwd(), 'public')));
 
 import albumsRouter from '../src/routes/albums';
 
-app.use('/albums', albumsRouter);
+app.use('/api/albums', albumsRouter);
 
 import mongoose from 'mongoose';
 
@@ -21,9 +32,11 @@ app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
 
-app.get('/', (req, res) => {
-  res.send('Connected to MongoDB!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Connected to MongoDB!');
+// });
+
+export default app;
 
 // import albums from './albums.js';
 
