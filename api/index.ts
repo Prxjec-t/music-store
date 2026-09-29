@@ -23,9 +23,11 @@ app.use(express.static('public'));
 
 import albumsRouter from '../src/routes/albums';
 import usersRouter from '../src/routes/users';
+import authRouter from '../src/routes/auth';
 
 app.use('/api/albums', albumsRouter);
 app.use('/api/users', usersRouter);
+app.use('/api/auth', authRouter);
 
 import mongoose from 'mongoose';
 
