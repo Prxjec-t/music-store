@@ -22,8 +22,10 @@ app.use(express.static('public'));
 // app.use(express.static(path.join(process.cwd(), 'public')));
 
 import albumsRouter from '../src/routes/albums';
+import usersRouter from '../src/routes/users';
 
 app.use('/api/albums', albumsRouter);
+app.use('/api/users', usersRouter);
 
 import mongoose from 'mongoose';
 
